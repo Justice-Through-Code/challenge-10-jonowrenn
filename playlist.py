@@ -49,8 +49,6 @@ display_playlist(my_playlist)
 # 6.1 TODO: In playlist_helpers.py, define a function called get_playlist_length()
 # See playlist_helpers.py for details on how to define this function
 
-def get_playlist_length(playlist):
-    len(playlist)
 
 # 6.2 TODO: Call the get_playlist_length function you just created in THIS script
 # to get the length of my_playlist (make sure you print out the result here!)
@@ -69,3 +67,10 @@ print(avg)
 # 9.0 TODO: In playlist_helpers.py, define a new function called play_track()
 # See playlist_helpers.py for details on how to define this function
 # In this file, play a few tracks, and run display_playlist() again to make sure it works
+
+
+play_track(my_playlist, 1)
+
+play_track(my_playlist, 2)
+
+display_playlist(my_playlist)

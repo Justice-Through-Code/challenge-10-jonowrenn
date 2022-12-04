@@ -44,8 +44,10 @@ So, if 'Controversy' has 0 plays so far, it should now be increased to 1
 '''
 
 def play_track(playlist, track = 1):
-    for i in range(len(playlist)):
-        if i == track -1:
-            print(f'Now playing track {track}: {playlist[i]["title"]} by {playlist[i]["artist"]}')
-            playlist[i]["plays"] += 1
-    return playlist[i]['plays']
+    try: 
+        song = playlist[track-1]
+        print(f'Now playing Track {track}: {song["title"]} by {song["artist"]}')
+        song["plays"] += 1
+    except IndexError: 
+    
+        return
